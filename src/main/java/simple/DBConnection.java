@@ -10,15 +10,15 @@ public class DBConnection {
 	/**
 	* URL of the database
 	*/
-	private String url = "jdbc:postgresql://xpgdev1.nfis.org:5432/sandbox";
+	private String url = "";
 	/**
 	* User name for the database.
 	*/
-	private String user = "nkievit";
+	private String user = "";
 	/**
 	* Password for the database.
 	*/
-	private String password = "Gr!tcH$t";
+	private String password = "";
 	
 	/**
 	* Creates a connection to the database given the url, user name, and password global variables.
