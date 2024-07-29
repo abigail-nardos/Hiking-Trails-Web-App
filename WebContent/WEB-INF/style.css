@@ -1,0 +1,212 @@
+*{
+	box-sizing: border-box;
+}
+	
+	body {
+		background-color: #1A0129;
+		color: #fff;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		height: 100vh;
+		margin: 0;
+	}
+	
+	.Trails-Container {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		left: 0px;
+		background-color: #643B9F;
+		border-radius: 10px;
+		box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+		padding: 100px;
+		margin: auto;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+	
+	.User-Records-Container {
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		right: 0px;
+		top: 0px;
+		background-color: #643B9F;
+		border-radius: 10px;
+		box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+		padding: 100px;
+		margin: auto;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+	
+	.Users-Container {
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		right: 0px;
+		bottom: 0px; 
+		background-color: #643B9F;
+		border-radius: 10px;
+		box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+		padding: 100px;
+		margin: auto;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+	
+	
+	table {
+		color: #e3e3e3;
+		padding: 10px;
+		width: 100%;
+	}
+	
+	table th,
+	table td {
+		padding: 15px;
+		text-align: left;
+		font-size: 20px;
+	}
+	
+	table tbody tr {
+		background-color: #1c223b;
+	}
+	
+	.edit {
+		cursor: pointer;
+		background-color: DCCFEC;
+		color: black;
+		border: 0;
+		border-radius: 2px;
+		color: #909090;
+		font-size: 16px;
+		padding: 5px 10px;
+	}
+	
+	.trail-filter input {
+		position: absolute;
+		top: 120px;
+		height: 30px;
+		width: 150px;
+	}
+	
+	.user-records-filter input {
+		position: absolute;
+		top: 120px;
+		left: 70px;
+		height: 30px;
+		width: 150px;
+	}
+	
+	.users-filter input {
+		position: absolute;
+		top: 120px;
+		left: 70px;
+		height: 30px;
+		width: 150px;
+	}
+	
+	.add-record-button {
+		position: absolute;
+		left: 700px;
+		top: 50px;
+		background-color: #C1BECD; 
+		color: black; 
+		padding: 10px 24px;
+		cursor: pointer; 
+		float: left; 
+	}
+	
+	.add-user-button {
+		position: absolute;
+		left: 700px;
+		top: 50px;
+		background-color: #C1BECD; 
+		color: black; 
+		padding: 10px 24px;
+		cursor: pointer; 
+		float: left; 
+	}		
+	
+	.record-popup {
+		display: none;
+		position: fixed;
+		bottom: 0;
+		right: 15px;
+		border: 3px solid #f1f1f1;
+		z-index: 9;
+	}
+	
+	.user-popup {
+		display: none;
+		position: fixed;
+		bottom: 0;
+		right: 15px;
+		border: 3px solid #f1f1f1;
+		z-index: 9;
+	}
+	
+	.record-form-container {
+		max-width: 400px;
+		max-height: 800px;
+		padding: 30px;
+		background-color: white;
+	}
+	
+	.user-form-container {
+		max-width: 400px;
+		max-height: 800px;
+		padding: 30px;
+		background-color: white;
+	}
+	
+	.record-form-container input[type=text] {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		border: none;
+		background: #f1f1f1;
+	}
+	
+	.user-form-container input[type=text] {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		border: none;
+		background: #f1f1f1;
+	}
+	
+	.record-form-container {
+		color: black;
+	}
+	
+	.user-form-container {
+		color: black;
+	}
+	
+	.btn-record-cancel {
+		position: fixed;
+		top: 565px;
+		right: 30px;
+	}
+	
+	.btn-user-cancel {
+		position: fixed;
+		top: 755px;
+		right: 30px;
+	}
+	
+	.btn-record-submit {
+		position: fixed;
+		right: 200px;
+		bottom: 15px;
+	}
+	
+	.btn-user-submit {
+		position: fixed;
+		right: 200px;
+		bottom: 15px;
+	}

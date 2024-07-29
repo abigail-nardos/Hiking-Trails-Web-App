@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context> <!-- UPDATE NAME, PASSWORD, DRIVERCLASS, URL -->
+    <Resource name="jdbc/dbcp"
+		auth="Container"
+		type="javax.sql.DataSource"
+		username="nkievit"
+		password="Gr!tcH$t"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		testWhileIdle="true"
+		testOnBorrow="true"
+		testOnReturn="false"
+		driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://xpgdev1.nfis.org:5432/sandbox"
+		validationQuery="SELECT * FROM trails;"
+		maxActive="100"
+        minIdle="10"
+        maxWait="10000"
+        initialSize="10"/>
+	<parameter>
+		<name>removeAbandoned</name>
+		<value>true</value>
+	</parameter>
+	<parameter>
+		<name>removeAbandonedTimeout</name>
+		<value>60</value>
+	</parameter>
+	<parameter>
+		<name>logAbandoned</name>
+		<value>true</value>
+	</parameter>
+   
+</Context>
